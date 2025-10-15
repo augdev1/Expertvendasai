@@ -51,7 +51,9 @@ source .venv/bin/activate  # Linux/Mac
 .venv\Scripts\activate     # Windows
 Instale as dependências:
 pip install -r requirements.txt
+
 Configure variáveis de ambiente:
+
 Crie um arquivo .env com suas credenciais (API keys, configs do Gemini, etc).
 
 Rode o projeto:
@@ -62,6 +64,7 @@ Ou rode o servidor FastAPI (opcional, se desejar API REST):
 uvicorn testapi:app --reload
 ⚡ Como funciona
 O agente utiliza o LLM Gemini 2.5 Flash via Agno, recebendo instruções personalizadas para responder apenas assuntos de dev e IA.
+
 O chat filtra qualquer pergunta fora do escopo e prioriza explicações claras, exemplos reais e recomendações metodológicas para aprendizado e prática profissional.
 
 🏗️ Arquitetura
