@@ -4,6 +4,10 @@
 
 # 📝 Descrição:
 
+👽 Devchat: Agente de IA especializado em programação e IA
+
+💬 Chat tutor focado para desenvolvedores e estudantes de tecnologia
+
 Este projeto é um agente conversacional de Inteligência Artificial focado exclusivamente em temas de programação e IA 🤖.
 
 Seu objetivo é ser um tutor digital, respondendo questões técnicas, oferecendo exemplos de código 💻, esclarecendo dúvidas sobre linguagens e frameworks.
