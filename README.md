@@ -2,7 +2,7 @@
 
 💬 Chat tutor focado para desenvolvedores e estudantes de tecnologia
 
-📝 Descrição
+# 📝 Descrição:
 
 Este projeto é um agente conversacional de Inteligência Artificial focado exclusivamente em temas de programação e IA 🤖.
 
@@ -11,7 +11,7 @@ Seu objetivo é ser um tutor digital, respondendo questões técnicas, oferecend
 
 🚫 O agente não responde temas fora da área de tecnologia, garantindo foco e especialização, tornando o ambiente seguro e eficiente para quem busca aprendizado estruturado em desenvolvimento e inteligência artificial.
 
-🛠️ Principais Tecnologias
+# 🛠️ Principais Tecnologias
 
 ⚡ Gemini 2.5 Flash — modelo LLM de alta performance para respostas contextualizadas
 
@@ -27,7 +27,8 @@ Seu objetivo é ser um tutor digital, respondendo questões técnicas, oferecend
 
 🗝️ dotenv/Python-dotenv — gerenciamento de variáveis de ambiente e config
 
-✨ Funcionalidades
+# ✨ Funcionalidades
+
 💬 Chat interativo com agente IA restrito a tópicos de programação e IA
 
 🎓 Geração de exemplos de código, boas práticas e dicas para devs
@@ -40,7 +41,8 @@ Seu objetivo é ser um tutor digital, respondendo questões técnicas, oferecend
 
 🚀 Possibilidade de extensão via API usando FastAPI
 
-⚙️ Instalação
+# ⚙️ Instalação
+
 Clone o repositório
 
 
