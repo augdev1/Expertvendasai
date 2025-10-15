@@ -40,29 +40,25 @@ Seu objetivo é ser um tutor digital, respondendo questões técnicas, oferecend
 ⚙️ Instalação
 Clone o repositório
 
-bash
+
 git clone https://github.com/augdev1/Devchat.git
 cd ai-dev-chat-by-aug
 Crie e ative um ambiente virtual (opcional, mas recomendado):
 
-bash
+
 python -m venv .venv
 source .venv/bin/activate  # Linux/Mac
 .venv\Scripts\activate     # Windows
 Instale as dependências:
-
-bash
 pip install -r requirements.txt
 Configure variáveis de ambiente:
 Crie um arquivo .env com suas credenciais (API keys, configs do Gemini, etc).
 
 Rode o projeto:
 
-bash
 streamlit run app.py
 Ou rode o servidor FastAPI (opcional, se desejar API REST):
 
-bash
 uvicorn testapi:app --reload
 ⚡ Como funciona
 O agente utiliza o LLM Gemini 2.5 Flash via Agno, recebendo instruções personalizadas para responder apenas assuntos de dev e IA.
