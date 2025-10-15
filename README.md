@@ -1,60 +1,59 @@
-Agente de IA especializado em programação e IA — Chat tutor focado para desenvolvedores e estudantes de tecnologia.
+👽 Devchat: Agente de IA especializado em programação e IA
+💬 Chat tutor focado para desenvolvedores e estudantes de tecnologia
+📝 Descrição
+Este projeto é um agente conversacional de Inteligência Artificial focado exclusivamente em temas de programação e IA 🤖.
+Seu objetivo é ser um tutor digital, respondendo questões técnicas, oferecendo exemplos de código 💻, esclarecendo dúvidas sobre linguagens e frameworks.
 
+🚫 O agente não responde temas fora da área de tecnologia, garantindo foco e especialização, tornando o ambiente seguro e eficiente para quem busca aprendizado estruturado em desenvolvimento e inteligência artificial.
 
-Descrição
-Este projeto é um agente conversacional de Inteligência Artificial focado exclusivamente em temas de programação e IA. O objetivo é ser um tutor digital, respondendo questões técnicas, oferecendo exemplos de código, esclarecendo dúvidas sobre linguagens e frameworks.
+🛠️ Principais Tecnologias
+⚡ Gemini 2.5 Flash — modelo LLM de alta performance para respostas contextualizadas
 
-O agente não responde temas fora da área de tecnologia, garantindo foco e especialização, tornando o ambiente seguro e eficiente para quem busca aprendizado estruturado em desenvolvimento e inteligência artificial.
+🕸️ Agno — framework para orquestração de agentes e contexto histórico
 
-Principais Tecnologias
-Gemini 2.5 Flash — modelo LLM de alta performance para respostas contextualizadas
+🌐 Streamlit — interface web interativa para chat e visualização
 
-Agno — framework para orquestração de agentes e contexto histórico
+🐍 Python — toda a lógica de backend e integração
 
-Streamlit — interface web interativa para chat e visualização
+🚀 FastAPI — opcional para servir rotas de API para integrações externas
 
-Python — toda a lógica de backend e integração
+🗃️ SQLite — armazenamento local de histórico de conversa/contexto
 
-FastAPI — opcional para servir rotas de API para integrações externas
+🗝️ dotenv/Python-dotenv — gerenciamento de variáveis de ambiente e config
 
-SQLite — armazenamento local de histórico de conversa/contexto
+✨ Funcionalidades
+💬 Chat interativo com agente IA restrito a tópicos de programação e IA
 
-dotenv/Python-dotenv — gerenciamento de variáveis de ambiente e config
+🎓 Geração de exemplos de código, boas práticas e dicas para devs
 
-Funcionalidades
-Chat interativo com agente IA restrito a tópicos de programação e IA
+📚 Citação de fontes confiáveis e explicação técnica contextualizada
 
-Geração de exemplos de código, boas práticas e dicas para devs
+🖥️ Interface moderna e responsiva via Streamlit
 
-Citação de fontes confiáveis e explicação técnica contextualizada
+🗂️ Histórico de conversas salvo em banco SQLite
 
-Interface moderna e responsiva via Streamlit
+🚀 Possibilidade de extensão via API usando FastAPI
 
-Histórico de conversas salvo em banco SQLite
-
-Possibilidade de extensão via API usando FastAPI
-
-Instalação
+⚙️ Instalação
 Clone o repositório
 
 bash
 git clone https://github.com/augdev1/Devchat.git
 cd ai-dev-chat-by-aug
-Crie e ative um ambiente virtual (opcional, mas recomendado)
+Crie e ative um ambiente virtual (opcional, mas recomendado):
 
 bash
 python -m venv .venv
 source .venv/bin/activate  # Linux/Mac
 .venv\Scripts\activate     # Windows
-Instale as dependências
+Instale as dependências:
 
 bash
 pip install -r requirements.txt
-Configure variáveis de ambiente
-
+Configure variáveis de ambiente:
 Crie um arquivo .env com suas credenciais (API keys, configs do Gemini, etc).
 
-Rode o projeto
+Rode o projeto:
 
 bash
 streamlit run app.py
@@ -62,28 +61,28 @@ Ou rode o servidor FastAPI (opcional, se desejar API REST):
 
 bash
 uvicorn testapi:app --reload
-Como funciona
+⚡ Como funciona
 O agente utiliza o LLM Gemini 2.5 Flash via Agno, recebendo instruções personalizadas para responder apenas assuntos de dev e IA.
 O chat filtra qualquer pergunta fora do escopo e prioriza explicações claras, exemplos reais e recomendações metodológicas para aprendizado e prática profissional.
 
-Arquitetura
+🏗️ Arquitetura
+agent.py — Lógica do agente via Agno
 
-agent.py — Lógica de instanciamento e controle do agente via Agno
 agno.db — Banco SQLite para histórico/contexto
-teste_front.py - Agno + Gemini + Streamlit para visual.
+
+teste_front.py — Agno + Gemini + Streamlit para visual
+
 testapi.py — Servidor FastAPI (opcional)
 
-Diferenciais:
+🚩 Diferenciais
+🎯 Foco exclusivo em tecnologia: não responde sobre temas gerais
 
-Foco exclusivo em tecnologia: não responde sobre temas gerais
+⚙️ Respostas pensadas para devs, profissionais de IA
 
-Respostas pensadas para devs, profissionais de IA
+🚀 Alto desempenho e contexto preservado na conversa
 
-Alto desempenho e contexto preservado na conversa
+🔌 Fácil extensão e integração via API
 
-Fácil extensão e integração via API
-
-Contribuições e Licença
+🤝 Contribuições e Licença
 Pull requests e sugestões são bem-vindas!
 Licença MIT.
-
