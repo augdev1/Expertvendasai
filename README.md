@@ -48,7 +48,7 @@ Clone o repositório
 
 git clone https://github.com/augdev1/Devchat.git
 
-cd ai-dev-chat-by-aug
+cd Devchat
 
 Crie e ative um ambiente virtual (opcional, mas recomendado):
 
