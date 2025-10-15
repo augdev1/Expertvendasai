@@ -3,8 +3,11 @@
 💬 Chat tutor focado para desenvolvedores e estudantes de tecnologia
 
 📝 Descrição
+
 Este projeto é um agente conversacional de Inteligência Artificial focado exclusivamente em temas de programação e IA 🤖.
+
 Seu objetivo é ser um tutor digital, respondendo questões técnicas, oferecendo exemplos de código 💻, esclarecendo dúvidas sobre linguagens e frameworks.
+
 
 🚫 O agente não responde temas fora da área de tecnologia, garantindo foco e especialização, tornando o ambiente seguro e eficiente para quem busca aprendizado estruturado em desenvolvimento e inteligência artificial.
 
@@ -49,10 +52,13 @@ Crie e ative um ambiente virtual (opcional, mas recomendado):
 
 
 python -m venv .venv
-source .venv/bin/activate
 # Linux/Mac
-.venv\Scripts\activate 
+source .venv/bin/activate
+
 # Windows
+
+.venv\Scripts\activate 
+
 Instale as dependências:
 
 pip install -r requirements.txt
