@@ -59,6 +59,7 @@ source .venv/bin/activate
 
 .venv\Scripts\activate 
 
+# Dependências
 Instale as dependências:
 
 pip install -r requirements.txt
