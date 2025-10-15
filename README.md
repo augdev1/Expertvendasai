@@ -75,12 +75,12 @@ streamlit run app.py
 Ou rode o servidor FastAPI (opcional, se desejar API REST):
 
 uvicorn testapi:app --reload
-⚡ Como funciona
+# ⚡ Como funciona
 O agente utiliza o LLM Gemini 2.5 Flash via Agno, recebendo instruções personalizadas para responder apenas assuntos de dev e IA.
 
 O chat filtra qualquer pergunta fora do escopo e prioriza explicações claras, exemplos reais e recomendações metodológicas para aprendizado e prática profissional.
 
-🏗️ Arquitetura
+# 🏗️ Arquitetura
 
 agent.py — Lógica do agente via Agno
 
