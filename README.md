@@ -42,14 +42,19 @@ Clone o repositório
 
 
 git clone https://github.com/augdev1/Devchat.git
+
 cd ai-dev-chat-by-aug
+
 Crie e ative um ambiente virtual (opcional, mas recomendado):
 
 
 python -m venv .venv
-source .venv/bin/activate  # Linux/Mac
-.venv\Scripts\activate     # Windows
+source .venv/bin/activate
+# Linux/Mac
+.venv\Scripts\activate 
+# Windows
 Instale as dependências:
+
 pip install -r requirements.txt
 
 Configure variáveis de ambiente:
@@ -59,6 +64,7 @@ Crie um arquivo .env com suas credenciais (API keys, configs do Gemini, etc).
 Rode o projeto:
 
 streamlit run app.py
+
 Ou rode o servidor FastAPI (opcional, se desejar API REST):
 
 uvicorn testapi:app --reload
@@ -68,6 +74,7 @@ O agente utiliza o LLM Gemini 2.5 Flash via Agno, recebendo instruções persona
 O chat filtra qualquer pergunta fora do escopo e prioriza explicações claras, exemplos reais e recomendações metodológicas para aprendizado e prática profissional.
 
 🏗️ Arquitetura
+
 agent.py — Lógica do agente via Agno
 
 agno.db — Banco SQLite para histórico/contexto
@@ -77,6 +84,7 @@ teste_front.py — Agno + Gemini + Streamlit para visual
 testapi.py — Servidor FastAPI (opcional)
 
 🚩 Diferenciais
+
 🎯 Foco exclusivo em tecnologia: não responde sobre temas gerais
 
 ⚙️ Respostas pensadas para devs, profissionais de IA
@@ -86,5 +94,7 @@ testapi.py — Servidor FastAPI (opcional)
 🔌 Fácil extensão e integração via API
 
 🤝 Contribuições e Licença
+
 Pull requests e sugestões são bem-vindas!
+
 Licença MIT.
