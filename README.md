@@ -68,7 +68,7 @@ Configure variáveis de ambiente:
 
 Crie um arquivo .env com suas credenciais (API keys, configs do Gemini, etc).
 
-Rode o projeto:
+# Rode o projeto:
 
 streamlit run app.py
 
@@ -90,7 +90,7 @@ teste_front.py — Agno + Gemini + Streamlit para visual
 
 testapi.py — Servidor FastAPI (opcional)
 
-🚩 Diferenciais
+# 🚩 Diferenciais
 
 🎯 Foco exclusivo em tecnologia: não responde sobre temas gerais
 
