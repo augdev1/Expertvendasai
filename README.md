@@ -1,5 +1,7 @@
 👽 Devchat: Agente de IA especializado em programação e IA
+
 💬 Chat tutor focado para desenvolvedores e estudantes de tecnologia
+
 📝 Descrição
 Este projeto é um agente conversacional de Inteligência Artificial focado exclusivamente em temas de programação e IA 🤖.
 Seu objetivo é ser um tutor digital, respondendo questões técnicas, oferecendo exemplos de código 💻, esclarecendo dúvidas sobre linguagens e frameworks.
@@ -7,6 +9,7 @@ Seu objetivo é ser um tutor digital, respondendo questões técnicas, oferecend
 🚫 O agente não responde temas fora da área de tecnologia, garantindo foco e especialização, tornando o ambiente seguro e eficiente para quem busca aprendizado estruturado em desenvolvimento e inteligência artificial.
 
 🛠️ Principais Tecnologias
+
 ⚡ Gemini 2.5 Flash — modelo LLM de alta performance para respostas contextualizadas
 
 🕸️ Agno — framework para orquestração de agentes e contexto histórico
