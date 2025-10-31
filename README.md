@@ -1,109 +1,100 @@
-# 📝 Descrição:
+# Expert Vendas AI
 
-👽 Devchat: Agente de IA especializado em programação e IA
+Um agente de IA especializado em vendas consultivas, copywriting persuasivo e criação de ofertas irresistíveis para negócios, produtos e serviços. Este projeto visa fornecer uma ferramenta poderosa para maximizar conversões, solucionar objeções, entender as dores do cliente e criar diferenciação competitiva, pensando e agindo como um "closer" profissional.
 
-💬 Chat tutor focado para desenvolvedores e estudantes de tecnologia
+## Funcionalidades Principais
 
-Este projeto é um agente conversacional de Inteligência Artificial focado exclusivamente em temas de programação e IA 🤖.
+*   **Agente de Vendas Consultivas:** Atua como um mentor, consultor e copywriter, com domínio de técnicas de persuasão, funil de vendas, storytelling, gatilhos mentais, negociação e abordagem em canais digitais.
+*   **Criação de Conteúdo:** Capaz de gerar copys, páginas de vendas, scripts de ligação, abordagens para WhatsApp/Telegram, templates de e-mail, textos curtos para anúncios e planos de ação para lançamento.
+*   **Interação Conversacional:** Interface de chat para interação direta com o agente de IA.
+*   **Histórico de Conversas:** Mantém um histórico das interações para contexto contínuo.
 
-Seu objetivo é ser um tutor digital, respondendo questões técnicas, oferecendo exemplos de código 💻, esclarecendo dúvidas sobre linguagens e frameworks.
+## Tecnologias Utilizadas
 
+*   **Backend:** Django (Python)
+*   **LLM:** Groq (com modelos como Llama-3.1-8b-instant)
+*   **Banco de Dados:** SQLite (para desenvolvimento)
+*   **Gerenciamento de Ambiente:** `python-dotenv`
 
-🚫 O agente não responde temas fora da área de tecnologia, garantindo foco e especialização, tornando o ambiente seguro e eficiente para quem busca aprendizado estruturado em desenvolvimento e inteligência artificial.
+## Configuração do Projeto
 
-# 🛠️ Principais Tecnologias
+Siga estes passos para configurar e rodar o projeto localmente:
 
-⚡ Gemini 2.5 Flash — modelo LLM de alta performance para respostas contextualizadas
+### 1. Clonar o Repositório
 
-🕸️ Agno — framework para orquestração de agentes e contexto histórico
+```bash
+git clone https://github.com/augdev1/Expertvendasai.git
+cd Expertvendasai
+```
 
-🌐 Streamlit — interface web interativa para chat e visualização
+### 2. Configurar Ambiente Virtual
 
-🐍 Python — toda a lógica de backend e integração
+É altamente recomendável usar um ambiente virtual para gerenciar as dependências do projeto.
 
-🚀 FastAPI — opcional para servir rotas de API para integrações externas
+```bash
+python -m venv venv
+# No Windows
+.\venv\Scripts\activate
+# No macOS/Linux
+source venv/bin/activate
+```
 
-🗃️ SQLite — armazenamento local de histórico de conversa/contexto
+### 3. Instalar Dependências
 
-🗝️ dotenv/Python-dotenv — gerenciamento de variáveis de ambiente e config
+Instale todas as bibliotecas Python necessárias:
 
-# ✨ Funcionalidades
-
-💬 Chat interativo com agente IA restrito a tópicos de programação e IA
-
-🎓 Geração de exemplos de código, boas práticas e dicas para devs
-
-📚 Citação de fontes confiáveis e explicação técnica contextualizada
-
-🖥️ Interface moderna e responsiva via Streamlit
-
-🗂️ Histórico de conversas salvo em banco SQLite
-
-🚀 Possibilidade de extensão via API usando FastAPI
-
-# ⚙️ Instalação
-
-Clone o repositório
-
-
-git clone https://github.com/augdev1/Devchat.git
-
-cd Devchat
-
-Crie e ative um ambiente virtual (opcional, mas recomendado):
-
-
-python -m venv .venv
-# Linux/Mac
-source .venv/bin/activate
-
-# Windows
-
-.venv\Scripts\activate 
-
-# Dependências
-Instale as dependências:
-
+```bash
 pip install -r requirements.txt
+```
 
-Configure variáveis de ambiente:
+### 4. Configurar Variáveis de Ambiente
 
-Crie um arquivo .env com suas credenciais (API keys, configs do Gemini, etc).
+Crie um arquivo `.env` na raiz do projeto (na mesma pasta que `manage.py`) com base no `.env.example`. **Substitua `YOUR_ACTUAL_GROQ_API_KEY` pela sua chave de API real do Groq.**
 
-# Rode o projeto:
+```dotenv
+GROQ_API_KEY="SUA_CHAVE_DE_API_GROQ_AQUI"
+AGNO_DB_PATH="./agno.db"
+DJANGO_SECRET_KEY="sua-chave-secreta-aqui" # Gere uma chave segura para produção
+DJANGO_DEBUG="True"
+```
 
-streamlit run app.py
+### 5. Migrações do Banco de Dados
 
-Ou rode o servidor FastAPI (opcional, se desejar API REST):
+Aplique as migrações do Django para configurar o banco de dados:
 
-uvicorn testapi:app --reload
-# ⚡ Como funciona
-O agente utiliza o LLM Gemini 2.5 Flash via Agno, recebendo instruções personalizadas para responder apenas assuntos de dev e IA.
+```bash
+python agnoframework/manage.py migrate
+```
 
-O chat filtra qualquer pergunta fora do escopo e prioriza explicações claras, exemplos reais e recomendações metodológicas para aprendizado e prática profissional.
+### 6. Coletar Arquivos Estáticos (Opcional, para deploy)
 
-# 🏗️ Arquitetura
+```bash
+python agnoframework/manage.py collectstatic
+```
 
-agent.py — Lógica do agente via Agno
+## Como Rodar a Aplicação
 
-agno.db — Banco SQLite para histórico/contexto
+Para iniciar o servidor de desenvolvimento Django:
 
-teste_front.py — Agno + Gemini + Streamlit para visual
+```bash
+python agnoframework/manage.py runserver
+```
 
-testapi.py — Servidor FastAPI (opcional)
+Acesse a aplicação no seu navegador em `http://127.0.0.1:8000/`.
 
-# 🚩 Diferenciais
+## Mudanças Recentes e Melhorias
 
-🎯 Foco exclusivo em tecnologia: não responde sobre temas gerais
+*   **Remoção da Funcionalidade TTS (Text-to-Speech):** A funcionalidade de conversão de texto em fala foi removida para simplificar o projeto e focar na interação textual com o LLM.
+*   **Correção do Salvamento do Histórico de Conversas:** O problema que impedia o salvamento e a exibição do histórico de conversas foi corrigido, garantindo que as interações anteriores sejam mantidas.
+*   **Configuração da Chave de API Groq:** O processo de configuração da chave de API do Groq foi esclarecido e verificado para garantir a comunicação adequada com o modelo de linguagem.
+*   **Inclusão de Arquivos do Projeto `agnoframework`:** Todos os arquivos essenciais do framework Django foram adicionados e rastreados pelo Git.
 
-⚙️ Respostas pensadas para devs, profissionais de IA
+## Próximos Passos e Ideias para Melhoria
 
-🚀 Alto desempenho e contexto preservado na conversa
+*   **Capacidades Multimodais:** Integrar modelos de Visão Computacional (por exemplo, do Hugging Face) para permitir que o agente "leia" e entenda imagens, respondendo a perguntas visuais ou descrevendo o conteúdo.
+*   **Geração de Imagens:** Adicionar a capacidade do agente de gerar imagens com base em descrições textuais.
+*   **Uso de Ferramentas (Function Calling):** Capacitar o LLM a interagir com ferramentas externas (pesquisa na web, APIs de CRM, etc.) para expandir suas capacidades.
+*   **Memória de Longo Prazo:** Implementar um sistema mais robusto para o agente lembrar de informações importantes sobre o usuário ou tópicos ao longo do tempo.
+*   **Deploy em Nuvem:** Realizar o deploy da aplicação em plataformas como Render, Railway, Heroku ou DigitalOcean para acesso público.
 
-🔌 Fácil extensão e integração via API
-
-🤝 Contribuições e Licença
-
-Pull requests e sugestões são bem-vindas!
-
-Licença MIT.
+---

@@ -4,3 +4,6 @@ agno
 fastapi
 pydantic
 uvicorn
+django
+SpeechRecognition
+gTTS
