@@ -80,7 +80,7 @@ Para iniciar o servidor de desenvolvimento Django:
 python agnoframework/manage.py runserver
 ```
 
-Acesse a aplicação no seu navegador em `http://127.0.0.1:8000/`.
+Acesse a aplicação no seu navegador em `http://127.00.1:8000/`.
 
 ## Mudanças Recentes e Melhorias
 
