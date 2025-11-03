@@ -1,9 +1,5 @@
-streamlit
-python-dotenv
 agno
-fastapi
-pydantic
-uvicorn
+python-dotenv
 django
-SpeechRecognition
-gTTS
+
+
