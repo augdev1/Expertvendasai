@@ -1,6 +1,7 @@
 # Expert Vendas AI
 
 Um agente de IA especializado em vendas consultivas, copywriting persuasivo e criação de ofertas irresistíveis para negócios, produtos e serviços. Este projeto visa fornecer uma ferramenta poderosa para maximizar conversões, solucionar objeções, entender as dores do cliente e criar diferenciação competitiva, pensando e agindo como um "closer" profissional.
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e01caded-2ea9-4719-a9de-757c4491faf5" />
 
 ## Funcionalidades Principais
 
