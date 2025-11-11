@@ -11,7 +11,7 @@ Um agente de IA especializado em vendas consultivas, copywriting persuasivo e cr
 *   **Histórico de Conversas:** Mantém um histórico das interações para contexto contínuo.
 
 ## Tecnologias Utilizadas
-
+*   **Agno:** Orquestrador de LLMs
 *   **Backend:** Django (Python)
 *   **LLM:** Groq (com modelos como Llama-3.1-8b-instant)
 *   **Banco de Dados:** SQLite (para desenvolvimento)
